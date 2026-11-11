@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        form {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        #button:hover {
+            font-weight: bold;
+        }
+
+        input{
+            widht: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid blue;
+            background-color: #f0f8ff;
+
+        @media screen and (max-width: 768px) {
+
+            form {
+                width: 90%;
+            }
+
+            input {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            form {
+                width: 100%;
+                padding: 5px;
+            }
+
+            fieldset {
+                padding: 10px;
+            }
+
+            input {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+        
+    </style>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados do Usuario</legend>
+            <div>
+                <label for="Nome">Nome</label>
+                <input type="text" id="Nome" name="usuarioNome">
+            </div>
+
+            <div>
+                <label for="email">e-mail</label>
+                <input type="email" id="email" name="usuarioEmail">
+            </div>
+
+            <div>
+                <label for="senha">senha</label>
+                <input type="password" id="senha" name="senhaUsuario">
+            </div>
+
+            <div>
+                <label for="dataNascimento">Data Nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
+            </div>
+
+            <div>
+                <label for="Curso">Curso</label>
+                <input type="text" id="Curso" name="cursoUsuario">
+            </div>
+
+            <div>
+                <label for="sexo">sexo</label>
+                <input type="text" id="sexo" name="usuarioSexo">
+            </div> 
+
+            <div>
+                <label for="interreses">Interreses</label>
+                <input type="text" id="interreses" name="interresesUsuario">
+            </div>
+
+            <div>
+                <label for="comentarios">Comentarios</label>
+                <input type="text" id="comentarios" name="comentariosUsuario">
+            </div>
+
+            <div>
+                <label for="uploadFoto">Upload Foto</label>
+                <input type="file" id="uploadFoto" name="uploadfotoUsuario">
+            </div> 
+
+            <div id="button">
+                <button type="submit">enviar</button>
+            </div>  
+        </fieldset>        
+    </form>
+</body>
+</html>
